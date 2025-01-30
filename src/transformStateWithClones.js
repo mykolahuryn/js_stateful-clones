@@ -28,6 +28,9 @@ function transformStateWithClones(state, actions) {
         newState = {};
         result.push({ ...newState });
         break;
+
+      default:
+        continue;
     }
   }
 
